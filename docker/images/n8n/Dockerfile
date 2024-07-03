@@ -30,3 +30,4 @@ RUN \
 ENV SHELL /bin/sh
 USER node
 ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
+RUN apk --no-cache add su-exec cups-client
